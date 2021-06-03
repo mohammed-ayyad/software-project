@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+<style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Open Sans", sans-serif
+    }
+    
+    .barrr::-webkit-scrollbar {
+        display: none;
+        /* Safari and Chrome */
+    }
+    
+    .boxx:hover {
+        background-color: rgb(0, 0, 0, 0.05) !important;
+    }
+    
+    textarea:focus,
+    input:focus,
+    button:focus {
+        outline: none;
+        border-bottom-color: rgba(0, 137, 179, 0.76);
+        border-left-color: rgba(0, 137, 179, 0.76);
+        transition: all ease-in-out .15s;
+    }
+    
+    .custom_output:hover {
+        outline: none;
+        border-bottom-color: rgba(0, 137, 179, 0.76);
+        border-left-color: rgba(0, 137, 179, 0.76);
+        transition: all ease-in-out .15s;
+    }
+    
+    textarea,
+    .custom_textArea,
+    input,
+    .custom_output {
+        border-bottom-width: 1.5px !important;
+    }
+    
+    textarea,
+    .custom_textArea {
+        border-width: 0 0 1.5px 1.5px;
+        border-bottom: 1.5px solid #ccc;
+        border-left: 1.5px solid #ccc;
+    }
+    
+    label {
+        color: rgb(82, 82, 82);
+    }
+    
+    .closebtn:hover {
+        color: red;
+    }
+</style>
+
+<body class="w3-theme-l5">
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i
+                    class="fa fa-home w3-margin-right"></i>Logo</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i
+                    class="fa fa-globe"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i
+                    class="fa fa-envelope"></i></a>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span
+                        class="w3-badge w3-right w3-small w3-green">3</span></button>
+                <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+                    <a href="#" class="w3-bar-item w3-button">One new friend request</a>
+                    <a href="#" class="w3-bar-item w3-button">John Doe posted on your wall</a>
+                    <a href="#" class="w3-bar-item w3-button">Jane likes your post</a>
+                </div>
+            </div>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-white" title="My Account">
+                <img src="https://www.w3schools.com/w3images/avatar2.png" class="w3-circle" style="height:35px;width:35px" alt="Avatar">
+            </a>
+        </div>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+    </div>
+
+    <!-- Page Container -->
+    <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
+        <!-- The Grid -->
+        <div class="w3-row">
+            <!-- Left Column -->
+            <div class="w3-col m3" style="position: sticky;top: 60px; max-height: 100%;">
+                <!-- Profile -->
+                <div class="w3-card w3-round w3-white">
+                    <div class="w3-container">
+                        <h4 class="w3-center">My Profile</h4>
+                        <p class="w3-center"><img src="https://www.w3schools.com/w3images/avatar3.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+                        <hr>
+                        <p><i class="fa fa-user-circle	fa-fw w3-margin-right w3-text-theme"></i> mohammed ayyad</p>
+                        <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> London, UK</p>
+                        <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> April 1, 1988</p>
+                    </div>
+                </div>
+                <br>
+
+                <!-- Accordion -->
+                <div class="w3-card w3-round">
+                    <div class="w3-white">
+                        <button class="w3-button w3-block w3-theme-l1 w3-left-align"><i
+                                class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> </button>
+
+                        <button class="w3-button w3-block w3-theme-l1 w3-left-align"><i
+                                class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events</button>
+
+                        <button class="w3-button w3-block w3-theme-l1 w3-left-align"><i
+                                class="fa fa-users fa-fw w3-margin-right"></i> My Photos</button>
+
+                    </div>
+                </div>
+                <br>
+
+                <!-- Interests -->
+                <div class="w3-card w3-round w3-white w3-hide-small">
+                    <div class="w3-container">
+                        <p>Interests</p>
+                        <p>
+                            <span class="w3-tag w3-small w3-theme-d5">News</span>
+                            <span class="w3-tag w3-small w3-theme-d4">W3Schools</span>
+                            <span class="w3-tag w3-small w3-theme-d3">Labels</span>
+                            <span class="w3-tag w3-small w3-theme-d2">Games</span>
+                            <span class="w3-tag w3-small w3-theme-d1">Friends</span>
+                            <span class="w3-tag w3-small w3-theme">Games</span>
+                            <span class="w3-tag w3-small w3-theme-l1">Friends</span>
+                            <span class="w3-tag w3-small w3-theme-l2">Food</span>
+                            <span class="w3-tag w3-small w3-theme-l3">Design</span>
+                            <span class="w3-tag w3-small w3-theme-l4">Art</span>
+                            <span class="w3-tag w3-small w3-theme-l5">Photos</span>
+                        </p>
+                    </div>
+                </div>
+                <br>
+
+                <!-- Alert Box -->
+                <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
+                    <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
+                        <i class="fa fa-remove"></i>
+                    </span>
+                    <p><strong>Hey!</strong></p>
+                    <p>People are looking at your profile. Find out who.</p>
+                </div>
+
+
+
+
+                <!-- End Left Column -->
+            </div>
+
+
+
+            <!-- right column -->
+            <div class="w3-col m9 ">
+                <div class="w3-container w3-card w3-round w3-theme-d2 w3-margin" style="margin-top: 0 !important;">
+                    <h2>Edit My Profile</h2>
+                </div>
+
+                <!-- ********************************   General *********************************************-->
+                <div class="w3-container w3-card w3-white w3-round w3-margin">
+
+                    <h2 style="color:#4d636f ;"><i class="fa fa-user-md	"></i> General</h2>
+
+
+                    <div class="w3-container">
+                        <div class="w3-row" style="margin-top: 30px;">
+                            <p class=" w3-third w3-margin" style="max-width:28.4%">
+                                <label>Work Phone Number</label>
+                                <br>
+                                <span class="w3-input custom_output">0595084547</span>
+                            </p>
+                            <p class="w3-third w3-margin" style="max-width:28.4%">
+                                <label class="">Email</label>
+                                <br>
+                                <span class="w3-input custom_output">mo@ggg.com</span>
+                            </p>
+                            <p class="w3-third w3-margin" style="max-width:28.4%">
+                                <label class="">Specialization</label>
+                                <br>
+                                <span class="w3-input custom_output">Orthopaedics</span>
+                            </p>
+                        </div>
+
+                        <div class="w3-row">
+                            <p class=" w3-margin">
+                                <label>About me</label>
+                                <br>
+                                <p class="w3-margin custom_textArea custom_output" style="min-width: 825px;min-height: 66px; padding-left:5px; padding-bottom: 5px;">
+                                    Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.
+
+                                </p>
+                            </p>
+
+                        </div>
+                        <div class="w3-row w3-center">
+                            <p class="w3-margin">
+                                <label class="">Years of Experience</label>
+                                <br>
+                                <p class="w3-input custom_output" style="width: 40%; margin: auto;">10 years</p>
+
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- ********************************   End General *********************************************-->
+                <!-- ********************************      Education     *********************************************-->
+
+                <div class="w3-container w3-card w3-white w3-round w3-margin">
+
+                    <h2 style="color:#4d636f ;"><i class="fa fa-mortar-board"></i> Education</h2>
+
+
+                    <div class="w3-container">
+                        <div class="w3-row" style="margin-top: 30px;">
+                            <p class=" w3-third	 w3-margin" style="max-width:28.4%">
+                                <label>University</label>
+                                <br>
+                                <span class="w3-input custom_output">iug</span>
+                            </p>
+                            <p class="w3-third w3-margin" style="max-width:28.4%">
+                                <label class="">Degree</label>
+                                <br>
+                                <span class="w3-input custom_output">Master degree</span>
+                            </p>
+                            <p class="w3-third w3-margin" style="max-width:28.4%">
+                                <label class="">Time period</label>
+                                <br>
+                                <span class="w3-input custom_output">2000-2008</span>
+                            </p>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- ********************************     end Education     *********************************************-->
+                <!-- ********************************     Work Experience     *********************************************-->
+
+                <div class="w3-container w3-card w3-white w3-round w3-margin">
+
+                    <h2 style=" color:#4d636f ; "><i class=" fa fa-suitcase fa-fw "></i> Work Experience
+                    </h2>
+                    <!--start card-->
+                    <div class="w3-container">
+
+                        <div class="w3-container">
+                            <div class="w3-row" ">
+                                <h5 class=" w3-opacity w3-half "><b>Front End Developer / w3schools.com</b></h5>
+                                </div>
+                                <h6 style=" color:#4d636f; "><i class=" fa fa-calendar w3-margin-right "></i>Jan
+                                2015-<span>Current</span></h6>
+                                <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.
+                                </p>
+                                <hr class=" custom_output w3-input ">
+                        </div>
+
+                </div>
+                <!--end  card-->
+                <!--start card-->
+                <div class=" w3-container ">
+
+                    <div class=" w3-container ">
+                        <div class=" w3-row " ">
+                                <h5 class=" w3-opacity w3-half "><b>Front End Developer / w3schools.com</b></h5>
+                            </div>
+                            <h6 style=" color:#4d636f; "><i class=" fa fa-calendar w3-margin-right "></i>Jan 2015-
+                                <span>Current</span>
+                            </h6>
+                            <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.
+                            </p>
+                            <hr class=" custom_output w3-input ">
+                        </div>
+
+                    </div>
+                    <!--end  card-->
+
+                    <!--start card-->
+                    <div class="w3-container ">
+
+                        <div class="w3-container ">
+                            <div class="w3-row " ">
+                            <h5 class=" w3-opacity w3-half "><b>Front End Developer / w3schools.com</b></h5>
+                        </div>
+                        <h6 style=" color:#4d636f; "><i class=" fa fa-calendar w3-margin-right "></i>Jan 2015-
+                            <span>Current</span></h6>
+                        <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.
+                        </p>
+                        <hr class=" custom_output w3-input ">
+                    </div>
+
+                </div>
+                <!--end  card-->
+
+                <!--start card-->
+                <div class=" w3-container ">
+
+                    <div class=" w3-container ">
+                        <div class=" w3-row " ">
+                                <h5 class=" w3-opacity w3-half "><b>Front End Developer / w3schools.com</b></h5>
+                            </div>
+                            <h6 style=" color:#4d636f; "><i class=" fa fa-calendar w3-margin-right "></i>Jan 2015-
+                                <span>Current</span>
+                            </h6>
+                            <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.
+                            </p>
+                            <hr class=" custom_output w3-input ">
+                        </div>
+
+                    </div>
+                    <!--end  card-->
+                    <!--start card-->
+                    <div class="w3-container ">
+
+                        <div class="w3-container ">
+                            <div class="w3-row " ">
+                            <h5 class=" w3-opacity w3-half "><b>Front End Developer / w3schools.com</b></h5>
+                        </div>
+                        <h6 style=" color:#4d636f; "><i class=" fa fa-calendar w3-margin-right "></i>Jan 2015-
+                            <span>Current</span></h6>
+                        <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.
+                        </p>
+                        <hr class=" custom_output w3-input ">
+                    </div>
+
+                </div>
+                <!--end  card-->
+
+            </div>
+
+
+
+            <!-- ********************************     End Work Experience     *********************************************-->
+
+        </div>
+    </div>
+
+
+
+
+    <!-- end right column -->
+
+
+    </div>
+    <!-- End Grid -->
+    </div>
+    <!-- End Page Container -->
+    </div>
+    <br>
+
+    <!-- Footer -->
+    <footer class=" w3-container w3-theme-d3 w3-padding-16 ">
+        <h5>Footer</h5>
+    </footer>
+
+    <footer class=" w3-container w3-theme-d5 ">
+        <p>Powered by <a href=" https://www.w3schools.com/w3css/default.asp " target=" _blank ">w3.css</a></p>
+    </footer>
+
+    <script>
+
+
+        // Accordion
+        function myFunction(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf(" w3-show ") == -1) {
+                x.className += " w3-show ";
+                x.previousElementSibling.className += " w3-theme-d1 ";
+            } else {
+                x.className = x.className.replace(" w3-show ", " ");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-theme-d1 ", " ");
+            }
+        }
+
+        // Used to toggle the menu on smaller screens when clicking on the menu button
+        function openNav() {
+            var x = document.getElementById(" navDemo ");
+            if (x.className.indexOf(" w3-show ") == -1) {
+                x.className += " w3-show ";
+            } else {
+                x.className = x.className.replace(" w3-show ", " ");
+            }
+        }
+
+     </script>
+
+</body>
+
+</html>

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+<style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Open Sans", sans-serif
+    }
+
+    .barrr::-webkit-scrollbar {
+        display: none;
+        /* Safari and Chrome */
+
+    }
+
+    .boxx:hover {
+        background-color: rgb(0, 0, 0, 0.05) !important;
+    }
+
+    textarea:focus,
+    input:focus,
+    button:focus {
+        outline: none;
+        border-bottom-color: rgba(0, 137, 179, 0.76);
+        border-left-color: rgba(0, 137, 179, 0.76);
+
+        transition: all ease-in-out .15s;
+    }
+
+    textarea,
+    input {
+
+        border-bottom-width: 1.5px !important;
+    }
+
+    textarea {
+        border-width: 0 0 1.5px 1.5px;
+        border-bottom: 1.5px solid #ccc;
+        border-left: 1.5px solid #ccc;
+
+    }
+
+    label {
+        color: rgb(82, 82, 82);
+    }
+
+    .closebtn:hover {
+        color: red;
+    }
+</style>
+
+<body class="w3-theme-l5">
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2"
+                href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i
+                    class="fa fa-home w3-margin-right"></i>Logo</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i
+                    class="fa fa-globe"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+                title="Account Settings"><i class="fa fa-user"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i
+                    class="fa fa-envelope"></i></a>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span
+                        class="w3-badge w3-right w3-small w3-green">3</span></button>
+                <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+                    <a href="#" class="w3-bar-item w3-button">One new friend request</a>
+                    <a href="#" class="w3-bar-item w3-button">John Doe posted on your wall</a>
+                    <a href="#" class="w3-bar-item w3-button">Jane likes your post</a>
+                </div>
+            </div>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-white" title="My Account">
+                <img src="https://www.w3schools.com/w3images/avatar2.png" class="w3-circle"
+                    style="height:35px;width:35px" alt="Avatar">
+            </a>
+        </div>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+    </div>
+
+    <!-- Page Container -->
+    <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
+        <!-- The Grid -->
+        <div class="w3-row">
+            <!-- Left Column -->
+            <div class="w3-col m3" style="position: sticky;top: 60px; max-height: 100%;">
+                <!-- Profile -->
+                <div class="w3-card w3-round w3-white">
+                    <div class="w3-container">
+                        <h4 class="w3-center">My Profile</h4>
+                        <p class="w3-center"><img src="https://www.w3schools.com/w3images/avatar3.png" class="w3-circle"
+                                style="height:106px;width:106px" alt="Avatar"></p>
+
+                        <div style="text-align: center; font-size: large;">
+                            <p>Edit My Photo</p>
+                        </div>
+
+                        <hr>
+
+                        <form action="" style="text-align: center;">
+                            <input class=" w3-button  w3-round-large   w3-theme-l1" style="width:80% ;margin: 3px;"
+                                type="file" name="myImage" accept="image/x-png,image/gif,image/jpeg" />
+                            <input class="w3-button  w3-round-large  w3-theme-l1"
+                                style="width:80% ;margin: 3px; margin-bottom: 10px;" type="submit">
+                        </form>
+
+                    </div>
+                </div>
+                <br>
+
+                <!-- Accordion -->
+                <div class="w3-card w3-round">
+                    <div class="w3-white">
+                        <button class="w3-button w3-block w3-theme-l1 w3-left-align"><i
+                                class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> </button>
+
+                        <button class="w3-button w3-block w3-theme-l1 w3-left-align"><i
+                                class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events</button>
+
+                        <button class="w3-button w3-block w3-theme-l1 w3-left-align"><i
+                                class="fa fa-users fa-fw w3-margin-right"></i> My Photos</button>
+
+                    </div>
+                </div>
+                <br>
+
+                <!-- Interests -->
+                <div class="w3-card w3-round w3-white w3-hide-small">
+                    <div class="w3-container">
+                        <p>Interests</p>
+                        <p>
+                            <span class="w3-tag w3-small w3-theme-d5">News</span>
+                            <span class="w3-tag w3-small w3-theme-d4">W3Schools</span>
+                            <span class="w3-tag w3-small w3-theme-d3">Labels</span>
+                            <span class="w3-tag w3-small w3-theme-d2">Games</span>
+                            <span class="w3-tag w3-small w3-theme-d1">Friends</span>
+                            <span class="w3-tag w3-small w3-theme">Games</span>
+                            <span class="w3-tag w3-small w3-theme-l1">Friends</span>
+                            <span class="w3-tag w3-small w3-theme-l2">Food</span>
+                            <span class="w3-tag w3-small w3-theme-l3">Design</span>
+                            <span class="w3-tag w3-small w3-theme-l4">Art</span>
+                            <span class="w3-tag w3-small w3-theme-l5">Photos</span>
+                        </p>
+                    </div>
+                </div>
+                <br>
+
+                <!-- Alert Box -->
+                <div
+                    class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
+                    <span onclick="this.parentElement.style.display='none'"
+                        class="w3-button w3-theme-l3 w3-display-topright">
+                        <i class="fa fa-remove"></i>
+                    </span>
+                    <p><strong>Hey!</strong></p>
+                    <p>People are looking at your profile. Find out who.</p>
+                </div>
+
+                <!-- End Left Column -->
+            </div>
+
+
+
+            <!-- right column -->
+            <div class="w3-col m9 ">
+                <div class="w3-container w3-card w3-round w3-theme-d2 w3-margin" style="margin-top: 0 !important;">
+                    <h2>Edit My Profile</h2>
+                </div>
+
+                <!-- ********************************   General *********************************************-->
+                <div class="w3-container w3-card w3-white w3-round w3-margin">
+
+                    <h2 style="color:#4d636f ;"><i class="fa fa-user-circle-o"></i> General</h2>
+
+
+                    <form class="w3-container">
+                        <div class="w3-row" style="margin-top: 30px;">
+                            <p class=" w3-third	 w3-margin" style="max-width:28.4%">
+                                <label>Phone Number</label>
+                                <br>
+                                <input class="w3-input " type="text">
+                            </p>
+                            <p class="w3-third w3-margin" style="max-width:28.4%">
+                                <label class="">Email</label>
+                                <br>
+                                <input class="w3-input" type="text">
+                            </p>
+                            <p class="w3-third w3-margin" style="max-width:28.4%">
+                                <label class="">Gender</label>
+                                <br>
+                                <select class="w3-select w3-round" name="option">
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="1">Male</option>
+                                    <option value="2">Female</option>
+                                </select>
+                            </p>
+                        </div>
+                        <div class="w3-row">
+                            <p class=" w3-half w3-margin" style="width:44.5%">
+                                <label>First Name</label>
+                                <br>
+                                <input class="w3-input" type="text">
+                            </p>
+                            <p class="w3-half w3-margin" style="width:44.5%">
+                                <label class="">Last Name</label>
+                                <br>
+                                <input class="w3-input" type="text">
+                            </p>
+                        </div>
+
+                        <div class="w3-row">
+                            <p class=" w3-margin">
+                                <label>About me</label>
+                                <br>
+                                <textarea id="w3review" name="w3review" rows="3" cols="90"
+                                    style="resize: none;"></textarea>
+                            </p>
+
+                        </div>
+                        <div class="w3-row">
+                            <p class=" w3-half w3-margin" style="width:40.5%">
+                                <label>Birthday</label>
+                                <br>
+                                <input class="w3-input" type="date">
+                            </p>
+                            <p class="w3-third w3-margin" style="width:42%">
+                                <label class="">Location</label>
+                                <br>
+                                <input class="w3-input" type="text" placeholder="Eg. London,Uk">
+
+                            </p>
+                            <div style="margin-top: 39px;"
+                                class="w3-rest w3-theme-d2 w3-right w3-button w3-round w3-dark-grey ">
+                                save
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+
+                <!-- ********************************   End General *********************************************-->
+                
+                <!-- ********************************     Work Experience     *********************************************-->
+
+
+                <div class="w3-container w3-card w3-white w3-round w3-margin">
+
+                    <h2 style="color:#4d636f ;"><i class="fa fa-suitcase fa-fw "></i> Medical history</h2>
+                    <div class="work_experince_temp">
+                        <div class="w3-container">
+
+                            <div class="w3-container">
+                                <div class="w3-row" style="margin-top: 30px;">
+
+                                    <h5 class="w3-opacity w3-half "><b>Cancer</b></h5>
+
+                                    <div class="w3-half " style="text-align: right;">
+                                        <div class="w3-dropdown-click">
+                                            <div onclick="work_card_edit()" class="w3-button fa fa-ellipsis-h dropbtn"
+                                                style="color:#4d636f;">
+                                            </div>
+                                            <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border"
+                                                style="min-width:auto;">
+                                                <div class="w3-bar-item w3-button">Edit</div>
+                                                <div class="w3-bar-item w3-button">Delete</div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <h6 style="color:#4d636f;"><i class="fa fa-calendar  w3-margin-right"></i>Jan 2015 -
+                                    <span>Current</span>
+                                </h6>
+                                <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur
+                                    est
+                                    reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus
+                                    iure,
+                                    iste.
+                                </p>
+                                <hr>
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+                    <div style="text-align: center; margin-bottom: -20px; ">
+                        <div onclick="add_work_expeince();" class="w3-button  w3-theme-d2 w3-xlarge w3-circle w3-black"
+                            style="padding: 5px 16px !important; ">+</div>
+
+                    </div>
+                </div>
+                <!-- ********************************     End Work Experience     *********************************************-->
+
+            </div>
+
+
+
+
+            <!-- end right column -->
+
+
+
+
+
+
+
+            <!-- Middle Column -->
+
+
+
+
+            <!-- End Middle Column -->
+
+            <!-- Right Column -->
+            <!-- <div style="position: sticky; top: 60px; width: 16.6666%; height: 700px; margin-left: 84%;">
+                <div class="w3-col m2 barrr" style="position: absolute;
+    right: 0;
+    overflow-y: scroll;
+    max-height: 82%;
+    width: 100%;">
+                    <div class="w3-card w3-round w3-white w3-center">
+                        <div class="w3-container">
+                            <p>Upcoming Events:</p>
+                            <img src="https://www.w3schools.com/w3images/forest.jpg" alt="Forest" style="width:100%;">
+                            <p><strong>Holiday</strong></p>
+                            <p>Friday 15:00</p>
+                            <p><button class="w3-button w3-block w3-theme-l4">Info</button></p>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="w3-card w3-round w3-white w3-center">
+                        <div class="w3-container">
+                            <p>Friend Request</p>
+                            <img src="https://www.w3schools.com/w3images/avatar6.png" alt="Avatar"
+                                style="width:50%"><br>
+                            <span>Jane Doe</span>
+                            <div class="w3-row w3-opacity">
+                                <div class="w3-half">
+                                    <button class="w3-button w3-block w3-green w3-section" title="Accept"><i
+                                            class="fa fa-check"></i></button>
+                                </div>
+                                <div class="w3-half">
+                                    <button class="w3-button w3-block w3-red w3-section" title="Decline"><i
+                                            class="fa fa-remove"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="w3-card w3-round w3-white w3-padding-16 w3-center">
+                        <p>ADS</p>
+                    </div>
+                    <br>
+
+                    <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
+                        <p><i class="fa fa-bug w3-xxlarge"></i></p>
+                    </div>
+                </div>
+ -->
+
+            <!-- End Right Column -->
+        </div>
+        <!-- End Grid -->
+    </div>
+    <!-- End Page Container -->
+    </div>
+    <br>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-theme-d3 w3-padding-16">
+        <h5>Footer</h5>
+    </footer>
+
+    <footer class="w3-container w3-theme-d5">
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
+
+    <script>
+        const x = document.getElementById("Demo");
+        function work_card_edit() {
+
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+        const x2 = document.getElementById("Demo");
+
+        window.onclick = (e) => {
+            if (!event.target.matches('.dropbtn')) {
+                if (x2.className.indexOf("w3-show") != -1)
+                    x2.className = x2.className.replace(" w3-show", "");
+            }
+        }
+
+        // Accordion
+        function myFunction(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-theme-d1";
+            } else {
+                x.className = x.className.replace("w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-theme-d1", "");
+            }
+        }
+
+        // Used to toggle the menu on smaller screens when clicking on the menu button
+        function openNav() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+        function add_work_expeince() {
+            let w_t = document.querySelectorAll(".work_temp");
+
+            for (let i = 0; i < w_t.length; i++) {
+                w_t[i].classList.remove("w3-animate-bottom")
+
+
+            }
+
+            let t = document.querySelector(".work_experince_temp");
+
+
+            t.insertAdjacentHTML("beforeend", `<form class="add_work_ex_temp"><div class="w3-container w3-margin w3-animate-bottom work_temp">
+                <div class="w3-row" style="margin-top: 30px;">
+                           <p class=" w3-third	 w3-margin" style="max-width:40.5%">
+                                <label>Title</label>
+                                <br>
+                                <input class="w3-input " type="text" placeholder="Title">
+                            </p>
+                            <p class="w3-half w3-margin" style="max-width:45.5%">
+                                <label class="">Time period</label>
+                                <br>
+                                <input class="w3-input" type="text" placeholder="Eg. Mar 2012 - Dec 2014  or  Jan 2015 - Current">
+                                  
+
+                            </p>
+                            <div onclick="remove_word_temp(this.parentElement.parentElement.parentElement)" class="w3-rest closebtn w3-right" style="font-size : 20px; max-width:5%; padding-right:22px;">
+                                                        <i class="fa fa-times"></i>
+
+                            </div>
+                      </div>
+
+                            <div class="w3-row ">
+                                <p class="w3-twothird w3-margin" style="">
+                                    <label class="">body</label>
+                                    <br>
+                                    <!--<input class="w3-input" type="text">-->
+                                    <textarea id="w3review" name="w3review" rows="3" cols="77" style="resize: none;"></textarea>
+
+                                </p>
+
+                                <div style="margin-top:72px;" class="w3-rest w3-theme-d2 w3-right w3-button w3-round w3-dark-grey " >
+                                    add
+                                </div>
+
+                            </div>
+                        </div>
+                        <hr style="color:black; border-top: 1px solid #4d636f !important;">
+                        
+                        </form>`
+            );
+
+
+        }
+        function remove_word_temp(e) {
+            e.parentNode.removeChild(e);
+        }
+    </script>
+
+</body>
+
+</html>

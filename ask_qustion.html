@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+    function x(e) {
+        let post_button0 = document.querySelector(".post_button");
+        post_button0.style.width = "210px";
+        post_button0.insertAdjacentHTML("beforeend", "<span id='new_post_span'> Create New Post</span>")
+
+
+
+    }
+    function x2() {
+        let post_button0 = document.querySelector(".post_button");
+        let new_post_span = document.querySelector("#new_post_span");
+        post_button0.style.width = "43px";
+        new_post_span.parentNode.removeChild(new_post_span);
+
+    }
+</script>
+<style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Open Sans", sans-serif
+    }
+
+    .barrr::-webkit-scrollbar {
+        display: none;
+
+        /* Safari and Chrome */
+
+
+    }
+
+    .boxx:hover {
+        background-color: rgb(0, 0, 0, 0.05) !important;
+    }
+
+    textarea:focus,
+    input:focus {
+        outline: none;
+    }
+
+    .post_button {
+        width: 43px;
+        -webkit-transition: width 0.3s ease-in-out;
+        transition: width 0.3s ease-in-out;
+
+
+    }
+
+    #new_post_span {
+        pointer-events: none;
+    }
+
+
+
+    #menu a {
+        display: list-item;
+        background-color: #607d8b;
+        margin: 3px;
+        color: white;
+        text-decoration: none;
+        white-space: normal;
+        width: auto;
+
+    }
+
+    .barrr {
+
+        overflow-y: scroll;
+        max-height: 84%;
+        width: 100% !important;
+        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+
+
+    }
+
+    textarea:focus,
+    input:focus,
+    button:focus {
+        outline: none;
+        border-bottom-color: rgba(0, 137, 179, 0.76);
+        border-left-color: rgba(0, 137, 179, 0.76);
+        transition: all ease-in-out .15s;
+    }
+
+    textarea,
+    input {
+        border-bottom-width: 1.5px !important;
+    }
+
+    textarea {
+        border-width: 0 0 1.5px 1.5px;
+        border-bottom: 1.5px solid #ccc;
+        border-left: 1.5px solid #ccc;
+    }
+
+
+    /* .post_button:hover{
+    width: 20%;
+
+} */
+</style>
+
+<body class="w3-theme-l5">
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2"
+                href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i
+                    class="fa fa-home w3-margin-right"></i>Logo</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i
+                    class="fa fa-globe"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+                title="Account Settings"><i class="fa fa-user"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i
+                    class="fa fa-envelope"></i></a>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span
+                        class="w3-badge w3-right w3-small w3-green">3</span></button>
+                <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+                    <a href="#" class="w3-bar-item w3-button">One new friend request</a>
+                    <a href="#" class="w3-bar-item w3-button">John Doe posted on your wall</a>
+                    <a href="#" class="w3-bar-item w3-button">Jane likes your post</a>
+                </div>
+            </div>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-white" title="My Account">
+                <img src="https://www.w3schools.com/w3images/avatar2.png" class="w3-circle"
+                    style="height:35px;width:35px" alt="Avatar">
+            </a>
+        </div>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+    </div>
+
+    <!-- Page Container -->
+    <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
+        <!-- The Grid -->
+        <div class="w3-row">
+
+
+
+
+
+<form action="">
+            <div class="w3-col m10 ">
+                <div class="w3-container w3-card w3-round w3-theme-d2 w3-margin" style="margin-top: 0 !important;">
+                    <h2>Ask a new question</h2>
+                </div>
+
+                <!-- ********************************   General *********************************************-->
+                <div class="w3-container w3-card w3-white w3-round w3-margin">
+
+                    <h2 style="color:#4d636f ;"><i class="fa fa-user-md	"> Qustion detials </i></h2>
+
+
+                    <div class="w3-container">
+                        <div class="w3-row w3-margin-bottom">
+                            <p class="w3-margin">
+                                <input onchange="iam_the_patient();" id="Iam_The_Patient" class="w3-check "
+                                    type="checkbox" checked>
+                                <label class=" w3-padding">Iam The Patient</label>
+
+
+                            </p>
+
+                        </div>
+                        <div class="w3-row Iam_not_The_Patient w3-hide">
+                            <p class=" w3-third w3-margin" style="width:28.5%">
+                                <label>Patient Name</label>
+                                <br>
+                                <input class="w3-input" type="text">
+                            </p>
+                            <p class="w3-third w3-margin" style="width:28.5%">
+                                <label class="">Patient Age</label>
+                                <br>
+                                <input class="w3-input" type="number">
+                            </p>
+                            <p class="w3-third w3-margin" style="max-width:28.4%">
+                                <label class="">Gender</label>
+                                <br>
+                                <select class="w3-select w3-round" name="option">
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="1">Male</option>
+                                    <option value="2">Female</option>
+                                </select>
+                            </p>
+                        </div>
+
+                        <div class="w3-row ">
+                            <p class="w3-half w3-margin" style="width:44.5%">
+                                <label class="">Title</label>
+                                <br>
+                                <input class="w3-input" type="text">
+                            </p>
+
+
+                        </div>
+                        <div class="w3-row">
+
+                            <p class="w3-half w3-margin" style="width:44.5%">
+                                <label class="">Specialist category</label>
+                                <br>
+
+
+                                <select class=" w3-select w3-round " id="doctor_id" name="doctor">
+                                    <option value="" disabled selected>Choose your option </option>
+                                    <option value="68">COVID-19 </option>
+                                    <option value="23">Allergist </option>
+                                    <option value="49">Anesthesiologist-resuscitator</option>
+                                    <option value="20">Venereologist</option>
+                                    <option value="19">Gastroenterologist</option>
+                                    <option value="63">Children's gastroenterologist</option>
+                                    <option value="31">>Hematologist</option>
+                                    <option value="33">Geneticist</option>
+                                    <option value="65">Hepatologist</option>
+                                    <option value="4">Gynecologist</option>
+                                    <option value="43">Children's gynecologist</option>
+                                    <option value="16">Homeopathist</option>
+                                    <option value="18">Dermatologist</option>
+                                    <option value="18">Dermatologist for children</option>
+                                    <option value="21">Nutritionist</option>
+                                    <option value="28">Immunologist</option>
+                                    <option value="35">Infectionist</option>
+                                    <option value="66">Infectionist for children</option>
+                                    <option value="7">Cardiologist</option>
+                                    <option value="54">Pediatric cardiologist</option>
+                                    <option value="25">Cosmetologist</option>
+                                    <option value="22">Speech therapist</option>
+                                    <option value="1">ENT (Otolaryngologist)</option>
+
+                                </select>
+
+
+                            </p>
+                            <p class="w3-half w3-margin" style="max-width:44.5%">
+                                <label class="">Specific Doctor</label>
+                                <br>
+                                <select class="w3-select w3-round" name="option">
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="1">dr_1</option>
+                                    <option value="2">dr_2</option>
+                                </select>
+                            </p>
+                        </div>
+
+                        <div class="w3-row">
+                            <p class=" w3-margin">
+                                <label>Detailed Description</label>
+                                <br>
+                                <textarea rows="3" cols="90"
+                                    style="resize: none;  width: -webkit-fill-available; max-width: 920px;"></textarea>
+                            </p>
+
+
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+                </div>
+
+
+                <!-- ********************************   End General *********************************************-->
+                <!-- ********************************   Personal Info *********************************************-->
+
+                <div class="w3-container w3-card w3-white w3-round w3-margin">
+
+                    <h2 style="color:#4d636f ;"><i class="fa fa-folder-open	"></i> Attach Files </h2>
+
+                    <div class="w3-container w3-margin">
+
+                        <ul class="w3-ul w3-card-4 file_card">
+                            <li class="w3-bar">
+                                <h2>No file added</h2>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <form id="attachment_file_to_submit" class="w3-hide " ></form>
+
+
+                    <div class="w3-container">
+                        <div style="margin-top: 39px;"
+                            class="w3-rest w3-theme-d2 w3-right w3-button w3-round w3-dark-grey ">
+                            Ask
+                        </div>
+                    </div>
+
+
+                    <div style="text-align: center; margin-bottom: -20px; ">
+                        <div onclick="document.getElementById('add_file').click();"
+                            class="w3-button  w3-theme-d2 w3-xlarge w3-circle w3-black"
+                            style="padding: 5px 16px !important; ">+</div>
+                    </div>
+                    <input id="add_file" onchange="add_file_func();" type="file" class="w3-hide">
+                </div>
+
+                <!-- ********************************  End Personal Info *********************************************-->
+
+            </div>
+</form>
+
+            <!-- Right Column -->
+            <div style="position: sticky; top: 60px; width: 16.6666%; height: 700px; margin-left: 84%;">
+                <div class="w3-col m2 barrr">
+                    <div id="menu" class="">
+                        <div class="w3-card w3-theme-l1 w3-center w3-round"
+                            style="background-color: #3a4b53 !important ; margin-top: -15px;">
+                            <p style="font-size: 1.1vw; padding: 21px 0 21px 0;">Department of Children's dermatologist
+                            </p>
+
+
+                        </div>
+
+
+
+
+                        <a class="new-question w3-button w3-block w3-theme-l1 w3-left-align " href="/news/0-0-0-0-1">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Ask a Question</font>
+                            </font>
+                        </a>
+
+
+
+
+                        <h2 style="text-align: center;">
+                            <font style="vertical-align: inherit;">
+                                <font style="color:#293338 ; vertical-align: inherit;">Categories</font>
+                            </font>
+                        </h2>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/covid_19/1-0-68">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">COVID-19</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/allergolog/1-0-23">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Allergist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align"
+                            href="/news/anesteziolog_reanimatolog/1-0-49">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Anesthesiologist-resuscitator</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/venerolog/1-0-20">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Venereologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/gastroenterolog/1-0-19">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Gastroenterologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/gematolog/1-0-31">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Hematologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/genetik/1-0-33">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Geneticist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/gepatolog/1-0-65">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Hepatologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/ginekologija/1-0-4">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Gynecologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/gomeopat/1-0-16">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Homeopathist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/dermatolog/1-0-18">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Dermatologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align"
+                            href="/news/detskiy_gastroenterolog/1-0-63">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Pediatric gastroenterologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/detskiy_ginekolog/1-0-43">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Pediatric gynecologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/detskiy_dermatolog/1-0-57">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Children's dermatologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align"
+                            href="/news/detskiy_infektsionist/1-0-66">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Children's infectious disease specialist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/detskiy_kardiolog/1-0-54">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Pediatric cardiologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/detskiy_lor/1-0-61">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Children's ENT</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/detskiy_nevrolog/1-0-46">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Children's neurologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/detskiy_nefrolog/1-0-67">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Pediatric Nephrologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/detskiy_oftalmolog/1-0-60">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Children's ophthalmologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/detskiy_psiholog/1-0-64">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Child psychologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/detskiy_pulmonolog/1-0-55">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Children's pulmonologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/detskiy_revmatolog/1-0-56">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Pediatric rheumatologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/detskiy_urolog/1-0-48">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Pediatric urologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/detskij_khirurg/1-0-3">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Pediatric surgeon</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align"
+                            href="/news/detskiy_endokrinolog/1-0-44">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Pediatric endocrinologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/dietolog/1-0-21">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Nutritionist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/immunolog/1-0-28">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Immunologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/infektsionist/1-0-35">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Infectionist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/kardiolog/1-0-7">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Cardiologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align"
+                            href="/news/klinicheskiy_psiholog/1-0-58">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Clinical psychologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/kosmetolog/1-0-25">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Cosmetologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/logoped/1-0-22">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Speech therapist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/lor/1-0-1">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Lore</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/mammolog/1-0-26">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Mammologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/medicinskiy_yurist/1-0-36">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Medical lawyer</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/narkolog/1-0-29">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Expert in narcology</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/nevropatolog/1-0-17">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Neuropathologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/neyrokhirurg/1-0-39">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Neurosurgeon</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/nefrolog/1-0-37">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Nephrologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/nutritsiolog/1-0-50">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Nutritionist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/onkolog/1-0-38">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Oncologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/onkourolog/1-0-42">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Oncourologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/ortoped_travmatolog/1-0-13">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Orthopedist-traumatologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/oftalmolog/1-0-2">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Ophthalmologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/parazitolog/1-0-59">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Parasitologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/pediatr/1-0-12">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Pediatrician</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align"
+                            href="/news/plasticheskiy_hirurg/1-0-32">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Plastic surgeon</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/proktolog/1-0-24">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Proctologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/psihiatr/1-0-15">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Psychiatrist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/psikholog/1-0-9">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Psychologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/pulmonolog/1-0-27">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Pulmonologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/revmatolog/1-0-45">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Rheumatologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/rentgenolog/1-0-47">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Radiologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/reproduktolog/1-0-53">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Reproductologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/seksolog/1-0-14">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Sexologist-Andrologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/stomatolog/1-0-5">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Dentist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align"
+                            href="/news/skoraja_pomoshh_03_online/1-0-6">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Therapist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/triholog/1-0-51">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Trichologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/urolog/1-0-30">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Urologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/farmacevt/1-0-41">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Pharmacist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/fizioterapevt/1-0-62">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Physiotherapist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/fitoterapevt/1-0-34">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Phytotherapist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/flebolog/1-0-40">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Phlebologist</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/ftiziatr/1-0-52">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Phthisiatrician</font>
+                            </font>
+                        </a>
+                        <a class="w3-button w3-block w3-theme-l1 w3-left-align" href="/news/khirurg/1-0-8">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Surgeon</font>
+                            </font>
+                        </a>
+                        <a href="/news/ehndokrinolog/1-0-10" class="last w3-button w3-block w3-theme-l1 w3-left-align">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Endocrinologist</font>
+                            </font>
+                        </a>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+                <!-- End Right Column -->
+            </div>
+
+            <!-- End Grid -->
+        </div>
+
+        <!-- End Page Container -->
+    </div>
+    <br>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-theme-d3 w3-padding-16">
+        <h5>Footer</h5>
+    </footer>
+
+    <footer class="w3-container w3-theme-d5">
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
+
+    <script>
+        // Accordion
+        function myFunction(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-theme-d1";
+            } else {
+                x.className = x.className.replace("w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-theme-d1", "");
+            }
+        }
+
+        // Used to toggle the menu on smaller screens when clicking on the menu button
+        function openNav() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+
+        document.querySelector(".barrr").addEventListener("scroll", (e) => {
+            console.log(e.target.scrollTop, e.target.scrollHeight, e.target.clientHeight)
+            if (e.target.scrollHeight - e.target.scrollTop <= e.target.clientHeight) {
+                console.log("true")
+            }
+        })
+
+        function iam_the_patient() {
+            document.querySelector(".Iam_not_The_Patient").classList.toggle("w3-hide");
+        }
+
+        function add_file_func() {
+            
+            let zzz = document.getElementById("add_file");
+            
+            document.querySelector(".file_card").insertAdjacentHTML("beforeend", `
+                                    <li  class="file_${zzz.files[0].name.replace(".","_")} w3-bar ">
+                                <span onclick="delete_attachment(this)"
+                                    class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+                                <h2 class="w3-bar-item" style="color:#4d636f ; margin-top:-6px;"><i class="fa fa-file"> </i></h2>
+                                <div class="w3-bar-item">
+                                    <span class="w3-large">${zzz.files[0].name}</span><br>
+                                    <span>Accountant</span>
+                                </div>
+                            </li>
+            `);
+            let yyy =document.getElementById("attachment_file_to_submit");
+            let aaaa=zzz.cloneNode(true);
+            aaaa.id=("file_"+zzz.files[0].name.replace(".", "_"));
+            yyy.appendChild(aaaa);
+            aaaa = null;
+
+            hide_no_file(attachment_file_to_submit);
+            
+
+        }
+        function hide_no_file(){
+            let file_card = document.querySelector(".file_card");
+            if(file_card.childElementCount>1)
+                file_card.firstElementChild.classList.add("w3-hide");
+            
+            else
+             file_card.firstElementChild.classList.remove("w3-hide");
+            
+            
+
+        }
+
+        function delete_attachment(e){
+
+           document.querySelectorAll("."+ e.parentNode.classList[0]).forEach(e => e.remove());
+           document.querySelectorAll("#"+ e.parentNode.classList[0]).forEach(e => e.remove());
+            hide_no_file();
+
+        }
+
+    </script>
+
+</body>
+
+</html>
